@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Violettahotel</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="script.js">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+
+
+
+
+	<div class ="banner">
+
+		<nav>
+			<a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-gift" aria-hidden="true"></i></a>
+		</nav>
+
+		
+
+
+		<video autoplay muted loop>
+			<source src="C:/WEB/Projects/Виолетта/violetta_website/Violetta_3.mp4" type="video/mp4">
+			</video>
+
+
+
+			<div class="mask"></div>
+
+
+
+
+			<div class="content">
+				<h1 class="h1-standart"> 
+					<span>Гостевой дом</span> 
+					<br> 
+				"Виолетта"</h1> 
+				<p class="p1">Небольшой, для тихого отдыха, <br> семейный.</p>
+			</div>
+
+			<!--<a class="img_button" href="#popup_video">Смотрите видео экскурсию!</a>
+			-->
+
+			<!--кнопка и модальное окно-->
+
+			<div class="modal">
+				<a href="#" class="btn">Смотрите видео экскурсию!</a>
+
+
+				<div class="video-container">
+					<span class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+					<video controls>
+						<source src="C:\WEB\Projects\Виолетта\violetta_website\видео обзор номера.mp4">
+						</video>
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+
+
+
+
+
+			<div class="section_2">
+
+
+				<div class ="video" id="popup_video">
+					<video preload="auto" poster="C:/WEB/Projects/Виолетта/main-photo.jpg" controls class="video_1">
+						<source src="C:/WEB/Projects/Виолетта/violetta_website/видео обзор номера.mp4" type="video/mp4">
+						</video>
+
+					</div>
+
+					<div class="p2"><p>Спасибо за просмотр!</p></div>
+
+				</div>
+
+				<div class="section_3"></div>
+
+
+				<script>
+					const btn = document.querySelector('.btn');
+					const videoContainer = document.querySelector('.video-container');
+					const close = document.querySelector('.close');
+					
+
+
+
+					btn.addEventListener('click',()=>{
+						videoContainer.classList.add('show');
+					})
+
+
+					close.addEventListener('click',()=>{
+						videoContainer.classList.remove('show');
+					})
+
+
+				</script>
+
+			</body>
+			</html>
