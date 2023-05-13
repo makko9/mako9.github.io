@@ -46,13 +46,38 @@ body{
 	font-family: 'Yeseva One', display;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+nav{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	bottom: 25%;
+	right: 0;
+	width: 60px;
+	height: 120px;
+
+	z-index: 3;
+
+}
+
+svg {
+	transform: scale(.7);
+}
+
 .container{
 	position: relative;
 	min-height: 100vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
-	/*	background-color: rgba(226, 221, 230, 8);*/
+	background-color: rgba(226, 221, 230, 8);
 	overflow: hidden;
 }
 
@@ -63,7 +88,7 @@ body{
 	position: absolute;
 	height: 100%;
 	object-fit: cover;
-	filter: blur(5px);
+	/*filter: blur(5px);*/
 }
 
 
@@ -76,7 +101,7 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
-	transform: translateY(150px);
+	transform: translateY(160px);
 }
 
 .title_cover{
@@ -87,7 +112,7 @@ body{
 }
 
 .title{
-	font-size: 60px;
+	font-size: 70px;
 	color: #f2f2f2;
 	font-family: 'Yeseva One', display;
 }
@@ -100,18 +125,22 @@ body{
 }
 
 
-.par{
-	margin-top: 40px;
-	font-size: 15px;
+.par, .par2{
+	margin-top: 70px;
+	font-size: 18px;
 	color: #f2f2f2;
 	font-family: 'Inter', sans-serif;
 	font-weight: 100;
+	line-height: 1.2;
 }
 
+.par2{
+	margin-top: 40px;
+}
 
 .mov-wrapper{
 	display: flex;
-	max-width: 700px;
+	max-width: 550px;
 	z-index: 3;
 }
 
