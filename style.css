@@ -67,9 +67,6 @@ nav{
 
 }
 
-svg {
-	transform: scale(.7);
-}
 
 .container{
 	position: relative;
@@ -113,13 +110,13 @@ svg {
 
 .title{
 	font-size: 70px;
-	color: #f2f2f2;
+	color: #43484d;
 	font-family: 'Yeseva One', display;
 }
 
 .subtitle{
 	font-size: 20px;
-	color: #f2f2f2;
+	color: #43484d;
 	font-family: 'Inter', sans-serif;
 	font-weight: 200;
 }
@@ -128,7 +125,7 @@ svg {
 .par, .par2{
 	margin-top: 70px;
 	font-size: 18px;
-	color: #f2f2f2;
+	color: #43484d;
 	font-family: 'Inter', sans-serif;
 	font-weight: 100;
 	line-height: 1.2;
