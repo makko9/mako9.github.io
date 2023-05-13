@@ -47,7 +47,7 @@ body{
 	min-height: 100vh;
 	display: flex;
 	justify-content: space-around;
-	align-items: flex-end;
+	align-items: flex-start;
 	background-color: rgba(226, 221, 230, 1);
 	overflow: hidden;
 }
