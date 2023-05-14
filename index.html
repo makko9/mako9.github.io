@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Гостевой дом "Виолетта"</title>
 	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -13,89 +12,92 @@
 
 <body>
 
+	
 
 
+<div class="container">
 
-	<div class="container">
 
-  <div id="menuToggle">
+<div id="menuToggle">
     <!--
     A fake / hidden checkbox is used as click reciever,
     so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" />
-    
+ -->
+ <input type="checkbox" />
+
     <!--
     Some spans to act as a hamburger.
     
     They are acting like a real hamburger,
     not that McDonalds stuff.
-    -->
-    <span></span>
-    <span></span>
-    <span></span>
-    
+ -->
+ <span></span>
+ <span></span>
+ <span></span>
+
     <!--
     Too bad the menu has to be inside of the button
     but hey, it's pure CSS magic.
-    -->
-    <ul id="menu">
-      <a href="#"><li>Позвонить</li></a>
-      <a href="#"><li>WhatsAppt</li></a>
-      <a href="#"><li>Telegram</li></a>
-      <a href="#"><li>Гостевой дом <br> Виолетта</li></a>
-      <a href="#"><li>г. Севастополь, ул. Частника, 100</li></a>
-    </ul>
-  </div>
+ -->
+ <ul id="menu">
+ 	<a href="#"><li>Позвонить</li></a>
+ 	<a href="#"><li>WhatsAppt</li></a>
+ 	<a href="#"><li>Telegram</li></a>
+ 	<p class="title-end">Гостевой дом Виолетта</p>
+ 	<p class="adress-end">г. Севастополь, ул. Частника, 100</p>
 
-		<video autoplay muted loop class="video">
-			<source src="Violetta_cover_min.mp4" type="video/mp4">
-			</video>
+ </ul>
+</div>
 
 
+	<video autoplay muted loop class="video">
+		<source src="Violetta_cover_min.mp4" type="video/mp4">
+		</video>
 
 
 
-			<div class="content">
-
-				<div class="title_cover">
-					<div class="title">	<h1>Виолетта</h1> </div>
-					<div class="subtitle"><h2>Гостевой дом</h2> </div>
-
-				</div>
 
 
-				<div class="par_cover">
-					<div class="par"><p>Уютный и ухоженный. <br> Принимаем гостей с 2011 года. </p> </div>
-					<div class="par2"><p>Посмотрите 3 серии о том, <br> как мы Вас любим. </p> </div>
-				</div>
+		<div class="content">
 
-				<div class="mov-wrapper">
+			<div class="title_cover">
+				<div class="title">	<h1>Виолетта</h1> </div>
+				<div class="subtitle"><h2>Гостевой дом</h2> </div>
 
-					<div class="movie moviebox-1">
-						<a href="#" class="btn1"><svg width="40px" height="40px" viewBox="0 0 24.00 24.00" fill="#e2dde624" xmlns="http://www.w3.org/2000/svg" stroke="#43484d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Media / Play_Circle"> <g id="Vector"> <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10 15V9L15 12L10 15Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g> </g></svg>
-						</a>
-						<div class="video-container">
-							<span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-								<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-							</svg></span>
-							<video controls>
-								<source src="Violetta_cover_min.mp4">
-								</video>
-							</div>
+			</div>
 
-							<span>1. Внутренний двор</span>
+
+			<div class="par_cover">
+				<div class="par"><p>Уютный и ухоженный. <br> Принимаем гостей с 2011 года. </p> </div>
+				<div class="par2"><p>Посмотрите 3 серии о том, <br> как мы Вас любим. </p> </div>
+			</div>
+
+			<div class="mov-wrapper">
+
+				<div class="movie moviebox-1">
+					<a href="#" class="btn1"><svg width="40px" height="40px" viewBox="0 0 24.00 24.00" fill="#e2dde624" xmlns="http://www.w3.org/2000/svg" stroke="#43484d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Media / Play_Circle"> <g id="Vector"> <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10 15V9L15 12L10 15Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g> </g></svg>
+					</a>
+					<div class="video-container1">
+						<span class="close1"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+							<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+						</svg></span>
+						<video class="vid1" controls>
+							<source src="https://youtu.be/-hRuNW55ndM">
+							</video>
 						</div>
-						
-						<div class="movie moviebox-2">
+
+						<span>1. Внутренний двор</span>
+					</div>
+
+					<div class="movie moviebox-2">
 						<a href="#" class="btn2"><svg width="40px" height="40px" viewBox="0 0 24.00 24.00" fill="#e2dde624" xmlns="http://www.w3.org/2000/svg" stroke="#43484d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Media / Play_Circle"> <g id="Vector"> <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10 15V9L15 12L10 15Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g> </g></svg>
 						</a>
-						<div class="video-container">
-							<span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+						<div class="video-container2">
+							<span class="close2"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
 								<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
 							</svg></span>
-							<video controls>
-								<source src="Violetta_cover_min.mp4">
+							<video class="vid2" controls>
+								<source src="https://youtu.be/qOO6lVMhmGc">
 								</video>
 							</div>
 
@@ -103,56 +105,68 @@
 						</div>
 
 						<div class="movie moviebox-3">
-						<a href="#" class="btn3"><svg width="40px" height="40px" viewBox="0 0 24.00 24.00" fill="#e2dde624" xmlns="http://www.w3.org/2000/svg" stroke="#43484d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Media / Play_Circle"> <g id="Vector"> <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10 15V9L15 12L10 15Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g> </g></svg>
-						</a>
-						<div class="video-container">
-							<span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-								<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-							</svg></span>
-							<video controls>
-								<source src="Violetta_cover_min.mp4">
-								</video>
+							<a href="#" class="btn3"><svg width="40px" height="40px" viewBox="0 0 24.00 24.00" fill="#e2dde624" xmlns="http://www.w3.org/2000/svg" stroke="#43484d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Media / Play_Circle"> <g id="Vector"> <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10 15V9L15 12L10 15Z" stroke="#43484d" stroke-width="0.48f2f2f2f2f2f201" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g> </g></svg>
+							</a>
+							<div class="video-container3">
+								<span class="close3"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+									<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+								</svg></span>
+								<video class="vid3" controls>
+									<source src="C:\WEB\Projects\Виолетта\violetta_website\видео обзор номера.mp4">
+									</video>
+								</div>
+
+								<span>3. Обзор окрестности</span>
 							</div>
 
-							<span>3. Обзор окрестности</span>
 						</div>
-						
 					</div>
 				</div>
-			</div>
 
 
 
 
 
-			<script>
+				<script>
 
-				const btn1 = document.querySelector('.btn1');
-				const btn2 = document.querySelector('.btn2');
-				const btn3 = document.querySelector('.btn3');
-				const videoContainer = document.querySelector('.video-container');
-				const close = document.querySelector('.close');
-
-
-				btn1.addEventListener('click',()=>{
-					videoContainer.classList.add('show');
-				})
-
-				btn2.addEventListener('click',()=>{
-					videoContainer.classList.add('show');
-				})
-
-				btn3.addEventListener('click',()=>{
-					videoContainer.classList.add('show');
-				})
+					const btn1 = document.querySelector('.btn1');
+					const btn2 = document.querySelector('.btn2');
+					const btn3 = document.querySelector('.btn3');
+					const videoContainer1 = document.querySelector('.video-container1');
+					const videoContainer2 = document.querySelector('.video-container2');
+					const videoContainer3 = document.querySelector('.video-container3');
+					const close1 = document.querySelector('.close1');
+					const close2 = document.querySelector('.close2');
+					const close3 = document.querySelector('.close3');
 
 
-				close.addEventListener('click',()=>{
-					videoContainer.classList.remove('show');
-				})
+					btn1.addEventListener('click',()=>{
+						videoContainer1.classList.add('show1');
+					})
 
-			</script>
+					btn2.addEventListener('click',()=>{
+						videoContainer2.classList.add('show2');
+					})
+
+					btn3.addEventListener('click',()=>{
+						videoContainer3.classList.add('show3');
+					})
 
 
-		</body>
-		</html>
+					close1.addEventListener('click',()=>{
+						videoContainer1.classList.remove('show1');
+					})
+
+					close2.addEventListener('click',()=>{
+						videoContainer2.classList.remove('show2');
+					})
+
+					close3.addEventListener('click',()=>{
+						videoContainer3.classList.remove('show3');
+					})
+
+				</script>
+
+
+			</body>
+			</html>
