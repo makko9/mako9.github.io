@@ -40,6 +40,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Yeseva+One&display=swap');
 
+@font-face{
+	font-family: 'Yeseva One', display;
+  src: url(/yoursite/fonts/st-Regular.ttf);
+}
+
+@font-face{
+font-family: 'Inter', sans-serif;
+  src: url(/yoursite/fonts/st-Regular.ttf);
+}
+
 body{
 	background: #fff;
 	font-family: 'Inter', sans-serif;
@@ -153,7 +163,9 @@ html{
 }
 
 
-.video-container{
+.video-container1,
+.video-container2,
+.video-container3{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -169,7 +181,7 @@ html{
 	transition: all 0.3s;
 }
 
-.video-container .close{
+.video-container1 .close1{
 	position: absolute;
 	top: 10%;
 	right: 5%;
@@ -178,22 +190,78 @@ html{
 	z-index: 9;
 }
 
-.video-container video{
+.video-container2 .close2{
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	font-size: 20px;
+	cursor: pointer;
+	z-index: 9;
+}
+
+.video-container3 .close3{
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	font-size: 20px;
+	cursor: pointer;
+	z-index: 9;
+}
+
+.video-container1 video{
 	width: 300px;
 	min-width: 300px;
 	transform: scale(0);
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 	outline: none;
+	object-fit: contain;
 	transition: all 0.3s;
 }
 
-.video-container.show{
+.video-container2 video{
+	width: 300px;
+	min-width: 300px;
+	transform: scale(0);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+	outline: none;
+	object-fit: contain;
+	transition: all 0.3s;
+}
+
+.video-container3 video{
+	width: 300px;
+	min-width: 300px;
+	transform: scale(0);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+	outline: none;
+	object-fit: contain;
+	transition: all 0.3s;
+}
+
+.video-container1.show1{
 	pointer-events: all;
 	opacity: 1;
 }
 
+.video-container2.show2{
+	pointer-events: all;
+	opacity: 1;
+}
 
-.video-container.show video{
+.video-container3.show3{
+	pointer-events: all;
+	opacity: 1;
+}
+
+.video-container1.show1 .vid1{
+	transform: scale(1);
+}
+
+.video-container2.show2 .vid2{
+	transform: scale(1);
+}
+
+.video-container3.show3 .vid3{
 	transform: scale(1);
 }
 
@@ -201,22 +269,6 @@ html{
 
 
 
-.menu-wrap{
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	font-size: 12px;
-	color: #43484d;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	z-index: 3;
-}
 
 
 #menu ul {
@@ -234,6 +286,21 @@ transform: translateY(100px);
 
 }
 
+.title-end, .adress-end {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+transform: translateY(200px);
+	font-size: 13px;
+	color: #43484d;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
 
 #menuToggle
 {
@@ -242,7 +309,7 @@ transform: translateY(100px);
 	top: 50px;
 	left: 50px;
 
-	z-index: 99;
+	z-index: 1;
 
 	-webkit-user-select: none;
 	user-select: none;
@@ -255,12 +322,6 @@ transform: translateY(100px);
 
 	transition: color 0.3s ease;
 }
-
-#menuToggle a:hover
-{
-	color: tomato;
-}
-
 
 #menuToggle input
 {
@@ -321,7 +382,7 @@ transform: translateY(100px);
  	opacity: 1;
  	transform: rotate(45deg) translate(-2px, -1px);
  	background: #232323;
- 	z-index: 99999;
+
  }
 
 /*
@@ -339,7 +400,7 @@ transform: translateY(100px);
  #menuToggle input:checked ~ span:nth-last-child(2)
  {
  	transform: rotate(-45deg) translate(0, -1px);
- 	z-index: 99999;
+
  }
 
 /*
@@ -348,22 +409,19 @@ transform: translateY(100px);
  */
  #menu
  {
-font-size: 16px;
 
  	width: 100vw;
  	height: 120vh;
  	margin: -70px 0 0 -50px;
  	padding-top: 95px;
-
  	background: #1b191c;
  	list-style-type: none;
  	-webkit-font-smoothing: antialiased;
  	/* to stop flickering of text in safari */
+ 	transform-origin: 0% 0%;
+ 	transform: translate(0, 85%);
 
- 	transform-origin: 0 0;
- 	transform: translate(0, 100%);
-
- 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ 	transition: transform 0.5s cubic-bezier(.55,0,.1,1);
  	z-index: 1;
  }
 
@@ -382,3 +440,9 @@ font-size: 16px;
  {
  	transform: none;
  }
+
+
+
+#outro-text{
+  	font-size: 12px;
+  }
