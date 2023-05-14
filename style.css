@@ -42,12 +42,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 @font-face{
 	font-family: 'Yeseva One', display;
-  src: url(/yoursite/fonts/st-Regular.ttf);
+  src: url(YesevaOne-Regular.ttf);
 }
 
 @font-face{
 font-family: 'Inter', sans-serif;
-  src: url(/yoursite/fonts/st-Regular.ttf);
+  src: url(Inter-VariableFont_slnt,wght.ttf);
 }
 
 body{
