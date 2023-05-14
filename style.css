@@ -58,6 +58,7 @@ body{
 	background: #fff;
 	font-family: 'Inter', sans-serif;
 	font-family: 'Yeseva One', display;
+	overflow: hidden;
 }
 
 html{
@@ -74,6 +75,15 @@ html{
 	overflow: hidden;
 }
 
+.container2{
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	background-color: rgba(226, 221, 230, 8);
+	overflow: hidden;
+}
 
 
 
@@ -91,10 +101,10 @@ html{
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding-top: 180px;
+
 }
 
 .title_cover{
@@ -118,10 +128,10 @@ html{
 }
 
 .par_cover{
-	padding-top: 200px;
+	padding-top: 90px;
 }
 
-#menu, .par, .par2{
+.par, .par2{
 	font-size: 13px;
 	color: #43484d;
 	font-family: 'Inter', sans-serif;
@@ -134,6 +144,8 @@ html{
 }
 
 .mov-wrapper{
+	position: fixed;
+	bottom: 0;
 	display: flex;
 	max-width: 550px;
 	z-index: 4;
@@ -167,286 +179,36 @@ html{
 }
 
 
-.video-container1,
-.video-container2,
-.video-container3{
-	position: fixed;
+.vid-box {
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+
+}
+
+.vid-box video{
+	position: relative;
 	height: 100%;
-	z-index: 1;
-	background-color:#e2dde696;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	opacity: 0;
-	pointer-events: none;
-	transition: all 0.3s;
-}
-
-.video-container1 .close1{
-	position: absolute;
-	top: 10%;
-	right: 5%;
-	font-size: 20px;
-	cursor: pointer;
-	z-index: 9;
-}
-
-.video-container2 .close2{
-	position: absolute;
-	top: 10%;
-	right: 5%;
-	font-size: 20px;
-	cursor: pointer;
-	z-index: 9;
-}
-
-.video-container3 .close3{
-	position: absolute;
-	top: 10%;
-	right: 5%;
-	font-size: 20px;
-	cursor: pointer;
-	z-index: 9;
-}
-
-.video-container1 video{
-	width: 300px;
-	min-width: 300px;
-	transform: scale(0);
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-	outline: none;
-	object-fit: contain;
-	transition: all 0.3s;
+			outline: none;
+			transition: all 0.3s;
 }
 
-.video-container2 video{
-	width: 300px;
-	min-width: 300px;
-	transform: scale(0);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-	outline: none;
-	object-fit: contain;
-	transition: all 0.3s;
-}
-
-.video-container3 video{
-	width: 300px;
-	min-width: 300px;
-	transform: scale(0);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-	outline: none;
-	object-fit: contain;
-	transition: all 0.3s;
-}
-
-.video-container1.show1{
-	pointer-events: all;
-	opacity: 1;
-}
-
-.video-container2.show2{
-	pointer-events: all;
-	opacity: 1;
-}
-
-.video-container3.show3{
-	pointer-events: all;
-	opacity: 1;
-}
-
-.video-container1.show1 .vid1{
-	transform: scale(1);
-}
-
-.video-container2.show2 .vid2{
-	transform: scale(1);
-}
-
-.video-container3.show3 .vid3{
-	transform: scale(1);
-}
-
-
-
-
-
-
-
-#menu ul {
-	position: absolute;
-	transform: translateY(100px);
-}
-#menu li {
-	position: relative;
+.contacts{
+	position: fixed;
+	top: 40%;
+	right: 10px;
+	height: 160px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	text-align: center;
-transform: translateY(100px);
 
 }
-
-.title-end, .adress-end {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-transform: translateY(200px);
-	font-size: 13px;
-	color: #43484d;
-	font-family: 'Inter', sans-serif;
-	font-weight: 500;
-	line-height: 1.2;
-}
-
-
-#menuToggle
-{
-	display: block;
-	position: absolute;
-	top: 50px;
-	left: 50px;
-
-	z-index: 1;
-
-	-webkit-user-select: none;
-	user-select: none;
-}
-
-#menuToggle a
-{
-	text-decoration: none;
-	color: #232323;
-
-	transition: color 0.3s ease;
-}
-
-#menuToggle input
-{
-	display: block;
-	width: 40px;
-	height: 32px;
-	position: absolute;
-	top: -7px;
-	left: -5px;
-
-	cursor: pointer;
-
-	opacity: 0; /* hide this */
-	z-index: 2; /* and place it over the hamburger */
-
-	-webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
- #menuToggle span
- {
- 	display: block;
- 	width: 27px;
- 	height: 2px;
- 	margin-bottom: 5px;
- 	position: relative;
-
- 	background: #43484d;
- 	border-radius: 3px;
-
- 	z-index: 99999;
-
- 	transform-origin: 4px 0px;
-
- 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
- 	background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
- 	opacity 0.55s ease;
- }
-
- #menuToggle span:first-child
- {
- 	transform-origin: 0% 0%;
- }
-
- #menuToggle span:nth-last-child(2)
- {
- 	transform-origin: 0 0;
- }
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
- #menuToggle input:checked ~ span
- {
- 	opacity: 1;
- 	transform: rotate(45deg) translate(-2px, -1px);
- 	background: #232323;
-
- }
-
-/*
- * But let's hide the middle one.
- */
- #menuToggle input:checked ~ span:nth-last-child(3)
- {
- 	opacity: 0;
- 	transform: rotate(0deg) scale(0.2, 0.2);
- }
-
-/*
- * Ohyeah and the last one should go the other direction
- */
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
- 	transform: rotate(-45deg) translate(0, -1px);
-
- }
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
- #menu
- {
-
- 	width: 100vw;
- 	height: 120vh;
- 	margin: -70px 0 0 -50px;
- 	padding-top: 95px;
- 	background: #1b191c;
- 	list-style-type: none;
- 	-webkit-font-smoothing: antialiased;
- 	/* to stop flickering of text in safari */
- 	transform-origin: 0% 0%;
- 	transform: translate(0, 85%);
-
- 	transition: transform 0.5s cubic-bezier(.55,0,.1,1);
- 	z-index: 1;
- }
-
- #menu li
- {color: #f2f2f2;
- 	padding: 10px 0;
- 	font-size: 22px;
- }
-
-
-
-/*
- * And let's slide it in from the left
- */
- #menuToggle input:checked ~ ul
- {
- 	transform: none;
- }
-
-
-
-#outro-text{
-  	font-size: 12px;
-  }
