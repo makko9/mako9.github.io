@@ -68,15 +68,6 @@ html{
 	scroll-behavior: smooth;
 }
 
-/*.section{
-	position: absolute;
-	min-height: 100vh;
-	top: 0;
-	left: 0;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	}*/
 
 
 	.container{
@@ -96,22 +87,7 @@ html{
 		margin-bottom: 40px;
 	}
 
-	/*.container2{
-		position: relative;
-		height: 900px;
-		top: 0;
-		left: 0;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-end;
-
-		overflow: hidden;
-		overflow-y: visible;
-		}*/
-
-
+	
 
 		.video{
 
@@ -127,20 +103,11 @@ html{
 
 
 
-	/*.content{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-
-		}*/
-
 		.title_cover{
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			/*max-width: 550px;*/
 			z-index: 1;
 			margin: 60px 0 30px;
 		}
@@ -179,7 +146,6 @@ html{
 			margin-left: auto;
 			margin-right: auto;
 			display: flex;
-			/*max-width: 550px;*/
 			z-index: 4;
 			transition: all .8s cubic-bezier(.17,.67,.83,.67);
 		}
@@ -192,50 +158,18 @@ html{
 			align-items: center;
 			text-align: center;
 			margin: 0 10px;
-		/*width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		background: transparent;*/
-		font-size: 12px;
+			font-size: 12px;
 		color: #43484d;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 800;
 		z-index: 3;
-		/*background-blend-mode: soft-light;*/
-		/*background-color: #f5d1b3;*/
-	}
+			}
 
-	/*.movie span{
-		margin-top: 10px;
-		z-index: 3;
-		}*/
-
+	
 		.movie svg {
 			filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 		}
 
-
-	/*.vid-box {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-		margin-top: 30px;
-
-		}*/
-
-	/*.vid-box video{
-		position: relative;
-		height: 50vh;
-		box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-		outline: none;
-		transition: all 0.3s;
-		}*/
 
 		.contacts{
 
@@ -250,22 +184,6 @@ html{
 
 		}
 
-	/*.par {
-		display: flex;
-		max-width: 400px;
-		flex-direction: column;
-		padding: 20px 40px;
-		font-size: 14px;
-		}*/
-
-	/*#price {
-		line-height: .6;
-		}*/
-
-/*iframe{
-	max-height: 437.69px;
-	max-width: 246.15px;
-	}*/
 
 
 
